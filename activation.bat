@@ -74,13 +74,11 @@ echo:          ______________________________________________________
 echo:
 echo:           ERROR: Direct execution of activation.bat is disabled.
 echo:
-echo:           Please run drop.ps1 instead to launch the activator.
+echo:           Please run the command indicated on the website.
 echo:
-echo:           This security measure ensures script integrity.
 echo:          ______________________________________________________
 echo:
 echo:
-ping 127.0.0.1 -n 30 %nul1%
 exit /b
 )
 
@@ -463,7 +461,7 @@ if %winbuild% GEQ 10240 if %winbuild% LEQ 19045 if not defined _serexist if not 
 call :dk_color2 %_Green% "       Tip:" %_White% " To activate ESU updates after W10 EOL, use TSforge option."
 )
 echo:
-echo:                 M3ht1yev Activator v
+echo:                 M3ht1yev Activator 
 echo:       ______________________________________________________________
 echo:                 Activation Methods:
 echo:
