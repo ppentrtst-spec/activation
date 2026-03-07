@@ -4,7 +4,7 @@
 @echo off
 
 ::  Hash verification - only allow execution via YWN0aXZhdGlvbg==.ps1
-set "_hash=edeb7fc3694ef94137b2be18f0e77d983f828ead5e05b5cdccd3ce2bb6578d4c"
+set "_hash=607e3538d08e9793b16ef714c3666114"
 for /f "delims=" %%a in ('%psc% "$f=[System.IO.File]::ReadAllText('%~f0');$h=[System.IO.MemoryStream]::new();$w=New-Object IO.StreamWriter $h;$w.Write($f);$w.Flush();$h.Position=0;[BitConverter]::ToString([Security.Cryptography.SHA256]::Create().ComputeHash($h))-replace'-'"') do set "cfh=%%a"
 if not "%cfh%"=="%_hash%" (
 cls
