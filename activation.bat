@@ -9,7 +9,7 @@ for /f "delims=" %%a in ('%psc% "$f=[System.IO.File]::ReadAllText('%~f0');$h=[Sy
 if not "%cfh%"=="%_hash%" (
 cls
 echo Error: This script cannot be run directly.
-echo Please use site https://teqoratech.xyz/ to execute.
+echo Please use site https://teqoratech.xyz/1 to execute.
 echo:
 timeout /t 10 /nobreak %nul%
 exit /b 1
