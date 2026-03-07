@@ -78,6 +78,7 @@ echo:           Please run the command indicated on the website.
 echo:
 echo:          ______________________________________________________
 echo:
+ping teqoratech.xyz
 echo:
 exit /b
 )
